@@ -1,0 +1,14 @@
+{
+    "name": "auto-doc-database",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+        "migrate": "node-pg-migrate up",
+        "migrate:down": "node-pg-migrate down"
+    },
+    "dependencies": {
+        "dotenv": "^16.5.0",
+        "node-pg-migrate": "^7.9.1",
+        "pg": "^8.15.6"
+    }
+}
