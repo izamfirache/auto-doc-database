@@ -11,12 +11,6 @@ export function up(pgm) {
         references: 'templates(id)',
         onDelete: 'CASCADE'
       },
-      user_id: {
-        type: 'uuid',
-        notNull: true,
-        references: 'users(id)',
-        onDelete: 'CASCADE'
-      },
       azure_blob_url: { type: 'text', notNull: true },
       created_at: {
         type: 'timestamp',
